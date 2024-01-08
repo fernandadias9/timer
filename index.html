@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer 2.0</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./JS/main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+</head>
+<body>
+  <section class="timer">
+    <div class="timer-clock">
+      <span id="minutes">00</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+    </div>
+  
+    <div id="controls">
+      <button data-action="running" class="ph ph-play-circle"></button>
+      <button data-action="reset" class="ph ph-stop-circle"></button>
+      <button data-action="addMinutes" class="ph ph-plus-circle"></button>
+      <button data-action="removeMinutes" class="ph ph-minus-circle"></button>    
+    </div>
+  </section>
+  
+  <section id="cards-toggle">   
+    <button data-name="tree" class="tree">
+      <i class="ph ph-tree" data-name="tree"></i>      
+    </button>
+
+    <button data-name="rain" class="rain">
+      <i class="ph ph-cloud-rain" data-name="rain"></i>      
+    </button>
+    
+    <button data-name="coffee" class="coffee">
+      <i class="ph ph-house" data-name="coffee"></i>      
+    </button>
+
+    <button data-name="fire" class="fire">
+      <i class="ph ph-flame" data-name="fire"></i>      
+    </button>     
+  </section>  
+</body>
+</html>
